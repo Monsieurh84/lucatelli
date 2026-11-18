@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lucatelli — Il Palazzo · Sole Dolce, extrait de parfum</title>
+<meta name="description" content="Franchissez la porte du Palazzo Lucatelli : vestibule, galerie, salle de l'acanthe et salon de l'écrin. Sole Dolce, extrait de parfum 50 ml en verre rubis.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#E9E1D3">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--trav:#E9E1D3;--trav2:#DCD1BE;--trav3:#C9BBA3;--pietra:rgba(70,52,34,.16);--ink:#241B16;--ink2:rgba(36,27,22,.68);--rub:#7E1220;--rub2:#3A0A10;--oro:#A88443;--oro2:#CFAE6B;--cz:"Cinzel",serif;--gar:"EB Garamond",Georgia,serif;--e:cubic-bezier(.22,.8,.2,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--trav);color:var(--ink);font-family:var(--gar);font-size:19px;line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+img{display:block;max-width:100%}
+.cz{font-family:var(--cz);letter-spacing:.22em;text-transform:uppercase;font-size:12px}
+.wrap{width:min(1280px,100% - 64px);margin:0 auto}
+@media(max-width:700px){.wrap{width:calc(100% - 40px)}body{font-size:17.5px}}
+
+/* en-tête */
+.hd{position:fixed;inset:0 0 auto;z-index:50;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:22px 32px;color:var(--ink);transition:color .5s}
+.hd.dk{color:var(--trav)}
+.hd .rl em{font-style:normal}
+.hd.solid{background:rgba(233,225,211,.93);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding-top:14px;padding-bottom:14px;box-shadow:0 1px 0 var(--pietra)}
+.hd.solid.dk{background:rgba(42,8,12,.93);box-shadow:0 1px 0 rgba(207,174,107,.2)}
+.hd .brand{font-family:var(--cz);font-size:19px;letter-spacing:.42em;padding-left:.42em}
+.hd .rl{justify-self:start;font-family:var(--cz);font-size:11px;letter-spacing:.22em;display:flex;align-items:center;gap:12px;text-align:left}
+.hd .bag{justify-self:end;font-family:var(--cz);font-size:11px;letter-spacing:.22em;display:flex;gap:8px;align-items:center}
+.hd .bag span{display:inline-grid;place-items:center;min-width:22px;height:22px;border:1px solid currentColor;border-radius:50%;font-size:10px;letter-spacing:0}
+@media(max-width:700px){.hd{padding:16px 20px}.hd .brand{font-size:15px;letter-spacing:.32em}.hd .rl em{display:none}}
+
+/* plan du palais (superposition) */
+.plan{position:fixed;inset:0;z-index:70;background:var(--trav);display:grid;place-items:center;opacity:0;pointer-events:none;transition:opacity .5s}
+.plan.on{opacity:1;pointer-events:auto}
+.plan .in{width:min(560px,calc(100% - 40px));text-align:center}
+.plan .cz{color:var(--ink2)}
+.plan h3{font-weight:400;font-style:italic;font-size:clamp(34px,5vw,54px);margin:6px 0 30px}
+.plan svg{width:100%;max-width:440px;overflow:visible}
+.plan rect{fill:#F3EEE5;stroke:var(--ink);stroke-width:1.2;cursor:pointer;transition:fill .3s}
+.plan g:hover rect{fill:var(--trav2)}
+.plan rect.on{fill:var(--rub)}
+.plan text{font-family:var(--cz);fill:var(--ink);pointer-events:none;text-anchor:middle}
+.plan .n{font-size:22px}.plan .t{font-size:9px;letter-spacing:2px}
+.plan rect.on~text{fill:var(--trav)}
+.plan .x{position:absolute;top:22px;right:28px;font-family:var(--cz);font-size:11px;letter-spacing:.22em}
+/* I · VESTIBOLO */
+.vest{height:280vh;position:relative}
+.vest .st{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden}
+.room{position:absolute;inset:0;background:radial-gradient(60% 55% at 50% 42%,#5a0f18 0%,var(--rub2) 45%,#120305 100%)}
+.room .apse{position:absolute;left:50%;bottom:22%;width:min(420px,60vw);height:min(560px,62vh);transform:translateX(-50%);border-radius:999px 999px 0 0;background:radial-gradient(80% 60% at 50% 30%,rgba(207,174,107,.22),rgba(0,0,0,0) 70%),linear-gradient(#2a070c,#1a0408);box-shadow:inset 0 30px 80px rgba(0,0,0,.6)}
+.room .apse::after{content:"";position:absolute;inset:14px 14px 0;border-radius:999px 999px 0 0;border:1px solid rgba(207,174,107,.28);border-bottom:0}
+.room .floor{position:absolute;left:0;right:0;bottom:0;height:22%;background:repeating-conic-gradient(#1c0507 0 25%,#2b080d 0 50%) 50% 0/90px 90px;transform-origin:50% 0;transform:perspective(300px) rotateX(48deg) scale(2.2,1.6);opacity:.9}
+.room .floor::after{content:"";position:absolute;inset:0;background:linear-gradient(rgba(18,3,5,.2),#120305 90%)}
+.room .beam{position:absolute;left:50%;top:-10%;width:60vw;height:100%;transform:translateX(-50%);background:conic-gradient(from 180deg at 50% 0,transparent 165deg,rgba(255,226,170,.10) 175deg,rgba(255,226,170,.16) 180deg,rgba(255,226,170,.10) 185deg,transparent 195deg);pointer-events:none}
+.room .ped{position:absolute;left:50%;bottom:20%;transform:translateX(-50%);width:min(230px,40vw);height:clamp(70px,13vh,130px);background:linear-gradient(90deg,#b9aa8f,#e6dccb 35%,#d9cdb7 60%,#a3937a);clip-path:polygon(4% 0,96% 0,100% 12%,100% 100%,0 100%,0 12%)}
+.room .ped::before{content:"";position:absolute;inset:16% 8% auto;height:1px;background:rgba(60,40,20,.35);box-shadow:0 8px 0 rgba(60,40,20,.18)}
+.room .bot{position:absolute;left:50%;bottom:calc(20% + clamp(70px,13vh,130px) - 4px);height:min(46vh,430px);transform:translateX(-50%);filter:drop-shadow(0 20px 30px rgba(0,0,0,.55))}
+.room .bot img{height:100%;width:auto}
+.room .grp{position:absolute;inset:0;transform-origin:50% 14%}
+.wall{position:absolute;inset:0;will-change:transform}
+.wall svg{width:100%;height:100%;display:block}
+.vtxt{position:absolute;inset:auto 0 0;padding:0 32px 7vh;display:flex;justify-content:space-between;align-items:flex-end;color:var(--trav);pointer-events:none;opacity:0;transition:opacity .2s}
+.vtxt h1{font-family:var(--gar);font-weight:400;font-style:italic;font-size:clamp(54px,7.5vw,120px);line-height:.9}
+.vtxt .l{max-width:420px}.vtxt .l .cz{color:var(--oro2);display:block;margin-bottom:14px}
+.vtxt .r{text-align:right;max-width:330px;pointer-events:auto}
+.vtxt .r p{font-size:17px;color:rgba(233,225,211,.78);margin-bottom:20px}
+.hint{position:absolute;left:50%;bottom:24px;transform:translateX(-50%);font-family:var(--cz);font-size:10.5px;letter-spacing:.3em;color:var(--oro2);text-align:center;transition:opacity .4s}
+.hint i{display:block;width:1px;height:34px;background:currentColor;margin:10px auto 0;animation:drop 2s infinite}
+@keyframes drop{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+@media(max-width:700px){.vtxt{flex-direction:column;align-items:flex-start;gap:18px;padding:0 20px 5vh}.vtxt .r{text-align:left}.room .bot{height:38vh}}
+
+.btn{display:inline-flex;align-items:center;gap:14px;font-family:var(--cz);font-size:12px;letter-spacing:.24em;padding:17px 30px;border:1px solid currentColor;transition:background .4s,color .4s}
+.btn.g{border-color:var(--oro2);color:var(--oro2)}.btn.g:hover{background:var(--oro2);color:var(--rub2)}
+.btn.r{background:var(--rub);border-color:var(--rub);color:var(--trav)}.btn.r:hover{background:var(--rub2)}
+
+/* titres de salle */
+.sala-h{display:grid;grid-template-columns:auto 1fr auto;align-items:end;gap:30px;margin-bottom:60px}
+.sala-h .num{font-family:var(--cz);font-size:clamp(64px,8vw,120px);line-height:.8;color:var(--rub)}
+.sala-h h2{font-weight:400;font-style:italic;font-size:clamp(38px,4.6vw,70px);line-height:1}
+.sala-h h2 small{display:block;font-style:normal;font-family:var(--cz);font-size:12px;letter-spacing:.3em;color:var(--ink2);margin-bottom:12px}
+.sala-h .rule{grid-column:1/-1;height:9px;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);opacity:.5}
+@media(max-width:700px){.sala-h{grid-template-columns:auto 1fr;gap:16px;margin-bottom:36px}.sala-h>.cz{display:none}}
+
+/* II · GALLERIA */
+.gal{position:relative;height:440vh;background:var(--trav)}
+.gal .st{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-start;padding-top:96px}
+.gal .hdr{position:relative;z-index:2}
+.track{display:flex;align-items:flex-start;gap:0;padding:0 8vw;will-change:transform;margin-top:34px;--ah:clamp(260px,calc(100svh - 400px),520px)}
+.bay{flex:none;display:flex;align-items:flex-end}
+.col{width:56px;height:var(--ah);flex:none}
+.col svg{width:100%;height:100%}
+.niche{width:calc(var(--ah) * .635);margin:0 30px;flex:none}
+.niche .arch{aspect-ratio:330/520;width:100%;border-radius:999px 999px 0 0;padding:12px;background:linear-gradient(var(--trav2),var(--trav3));box-shadow:inset 0 0 0 1px rgba(70,52,34,.25)}
+.niche .arch div{width:100%;height:100%;border-radius:999px 999px 0 0;overflow:hidden;box-shadow:inset 0 14px 30px rgba(0,0,0,.25);background:#d9d2df}
+.niche img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--e)}
+.niche:hover img{transform:scale(1.05)}
+.cart{margin-top:18px;padding:12px 14px;background:#F3EEE5;border:1px solid var(--pietra);font-size:15px;line-height:1.45;min-height:94px}
+.cart .cz{font-size:10.5px;color:var(--rub);display:block;margin-bottom:4px}
+.marble-floor{position:absolute;left:0;right:0;bottom:0;height:16vh;background:repeating-conic-gradient(#d8ccb6 0 25%,#efe8dc 0 50%) 0 0/120px 120px;transform-origin:50% 0;transform:perspective(400px) rotateX(55deg) scale(2.4,1.4);opacity:.7;z-index:0}
+.gal .track{position:relative;z-index:1}
+.gal .prog{position:absolute;left:50%;bottom:32px;transform:translateX(-50%);width:200px;height:1px;background:var(--pietra);z-index:2}
+.gal .prog i{position:absolute;inset:0;background:var(--rub);transform-origin:left;transform:scaleX(0)}
+@media(max-width:900px){
+ .gal{height:auto;padding:110px 0 80px}.gal .st{position:static;height:auto;overflow:visible}.gal .hdr{position:static}
+ .track{overflow-x:auto;scroll-snap-type:x mandatory;padding:0 20px 20px;margin-top:0;transform:none!important;scrollbar-width:none}.track::-webkit-scrollbar{display:none}
+ .niche{width:72vw;margin:0 10px;scroll-snap-align:center}.col{display:none}.marble-floor,.gal .prog{display:none}}
+
+/* III · ACANTO */
+.acan{position:relative;padding:150px 0;background:#E2D6C2;overflow:hidden}
+.acan .sinopia{position:absolute;right:-6%;top:-4%;height:115%;opacity:.13;pointer-events:none}
+.acan .sinopia path{fill:none;stroke:var(--rub);stroke-width:1.4;vector-effect:non-scaling-stroke}
+.ag{display:grid;grid-template-columns:.9fr 1fr;gap:90px;align-items:center;position:relative}
+.ag .niche{width:100%;margin:0;max-width:440px}
+.drop::first-letter{font-family:var(--cz);float:left;font-size:4.1em;line-height:.82;padding:6px 12px 0 0;color:var(--rub)}
+.ag p{color:var(--ink2);max-width:540px}.ag p+p{margin-top:18px}
+.notify{display:flex;margin-top:36px;max-width:460px;border:1px solid var(--ink)}
+.notify input{flex:1;min-width:0;border:0;background:transparent;padding:15px 16px;font:inherit;font-size:16px;outline:none;color:var(--ink)}
+.notify button{font-family:var(--cz);font-size:11px;letter-spacing:.2em;padding:0 20px;background:var(--ink);color:var(--trav)}
+@media(max-width:900px){.acan{padding:100px 0}.ag{grid-template-columns:1fr;gap:44px}.ag .niche{max-width:320px;margin:0 auto}}
+
+/* IV · FORMULA */
+.form{padding:150px 0;background:var(--trav)}
+.slab{position:relative;max-width:1100px;margin:0 auto;padding:60px 56px 50px;background:#ece6dc;box-shadow:0 40px 80px -50px rgba(40,25,10,.55),inset 0 0 0 1px rgba(70,52,34,.2);overflow:hidden}
+.slab>svg.veins{position:absolute;inset:0;width:100%;height:100%;opacity:.55;pointer-events:none}
+.slab>*:not(.veins){position:relative}
+.slab .ins{text-align:center;font-family:var(--cz);font-size:clamp(22px,2.6vw,34px);letter-spacing:.3em;color:#5b4a3a;text-shadow:0 1px 0 rgba(255,255,255,.7),0 -1px 0 rgba(0,0,0,.18)}
+.slab .sub{text-align:center;font-style:italic;color:var(--ink2);margin:8px 0 46px}
+.orders{display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+.order{text-align:center;padding:0 26px}
+.order+.order{border-left:1px solid rgba(70,52,34,.22)}
+.order svg{height:150px;width:auto;margin:0 auto 20px;color:#6d5a46}
+.order .cz{font-size:11px;color:var(--rub);display:block}
+.order h3{font-weight:400;font-size:30px;font-style:italic;margin:2px 0 10px}
+.order .mat{font-family:var(--cz);font-size:13.5px;letter-spacing:.14em;line-height:2;color:#4d3e30;text-shadow:0 1px 0 rgba(255,255,255,.7)}
+.order p{font-size:15px;color:var(--ink2);margin-top:10px}
+.inci{margin-top:46px;padding-top:22px;border-top:1px solid rgba(70,52,34,.25);font-size:14px;color:var(--ink2);text-align:center}
+.inci .cz{font-size:10px;display:block;margin-bottom:6px}
+@media(max-width:800px){.slab{padding:40px 22px}.orders{grid-template-columns:1fr}.order{padding:30px 0}.order+.order{border-left:0;border-top:1px solid rgba(70,52,34,.22)}.order svg{height:110px}}
+
+/* V · SALONE */
+.sal{background:var(--rub2);color:var(--trav);padding:150px 0}
+.sal .sala-h .num{color:var(--oro2)}.sal .sala-h h2 small{color:rgba(233,225,211,.6)}.sal .sala-h .rule{border-color:var(--trav)}
+.sg{display:grid;grid-template-columns:1.1fr .9fr;gap:80px;align-items:center}
+.sal .niche{width:100%;margin:0}
+.sal .niche .arch{background:linear-gradient(#5a1a22,#2a070c);box-shadow:inset 0 0 0 1px rgba(207,174,107,.35)}
+.acq{border:1px solid rgba(207,174,107,.4);padding:40px}
+.acq .cz{color:var(--oro2);font-size:11px}
+.acq h3{font-weight:400;font-style:italic;font-size:52px;line-height:1;margin:10px 0 6px}
+.acq .k{color:rgba(233,225,211,.7);font-size:16px}
+.acq .row{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 0;border-bottom:1px solid rgba(207,174,107,.22)}
+.acq .row:first-of-type{margin-top:24px;border-top:1px solid rgba(207,174,107,.22)}
+.acq input[type=text]{background:transparent;border:0;border-bottom:1px solid rgba(233,225,211,.5);color:var(--trav);font-family:var(--cz);letter-spacing:.3em;font-size:15px;padding:6px 0;width:170px;text-align:right;outline:none;text-transform:uppercase}
+.acq input::placeholder{color:rgba(233,225,211,.4);letter-spacing:.15em}
+.qty{display:flex;align-items:center;gap:18px;font-family:var(--cz)}
+.qty button{width:30px;height:30px;border:1px solid rgba(233,225,211,.4);border-radius:50%}
+.acq .price{font-family:var(--cz);font-size:34px;letter-spacing:.06em;color:var(--oro2)}
+.acq .btn{width:100%;justify-content:center;margin-top:26px}
+.acq small{display:block;text-align:center;margin-top:14px;font-size:14px;color:rgba(233,225,211,.6)}
+.reg{position:fixed;inset:0;z-index:80;display:grid;place-items:center;background:rgba(18,3,5,.7);backdrop-filter:blur(4px);opacity:0;pointer-events:none;transition:opacity .5s}
+.reg.on{opacity:1;pointer-events:auto}
+.reg .card{background:var(--trav);color:var(--ink);padding:46px 40px;max-width:440px;width:calc(100% - 40px);text-align:center;transform:translateY(20px);transition:transform .6s var(--e);border:1px solid var(--oro)}
+.reg.on .card{transform:none}
+.reg .seal{width:76px;height:76px;margin:0 auto 18px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#a8323d,var(--rub) 55%,#4a0a12);display:grid;place-items:center;box-shadow:0 6px 14px rgba(0,0,0,.25)}
+.reg .seal svg{width:24px;height:46px;stroke:#e9c98a;fill:none;stroke-width:9}
+.reg h4{font-weight:400;font-style:italic;font-size:32px;line-height:1.1}
+.reg p{color:var(--ink2);margin:10px 0 24px;font-size:16px}
+.reg .acts{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+@media(max-width:900px){.sal{padding:100px 0}.sg{grid-template-columns:1fr;gap:44px}.sal .niche{max-width:340px;margin:0 auto}.acq{padding:26px 20px}.acq h3{font-size:42px}}
+
+/* cortile / pied de page */
+.cort{background:#1a1310;color:rgba(233,225,211,.75);padding:90px 0 30px;font-size:16px}
+.cort .top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.4fr;gap:40px}
+.cort .brand{font-family:var(--cz);font-size:24px;letter-spacing:.4em;color:var(--trav)}
+.cort h5{font-family:var(--cz);font-weight:400;font-size:11px;letter-spacing:.25em;color:var(--oro2);margin-bottom:14px}
+.cort li{list-style:none;margin:6px 0}
+.cort .notify{border-color:rgba(233,225,211,.4)}.cort .notify input{color:var(--trav)}.cort .notify button{background:var(--oro2);color:#1a1310}
+.cort .bot{margin-top:70px;padding-top:24px;border-top:1px solid rgba(233,225,211,.15);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13px}
+@media(max-width:900px){.cort .top{grid-template-columns:1fr 1fr}.cort .top>div:first-child,.cort .top>div:last-child{grid-column:1/-1}}
+.rv{opacity:0;transform:translateY(24px);transition:opacity 1.1s var(--e),transform 1.1s var(--e)}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<header class="hd" id="hd">
+  <button class="rl cz" id="roomLbl" onclick="openPlan(true)" aria-label="Ouvrir le plan du palais"><svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor"><rect x="1.5" y="1.5" width="13" height="13"/><path d="M1.5 8H8V14.5M8 1.5V5M11 8H14.5"/></svg><span><b>Sala </b><span id="roomN">I</span><em> · <span id="roomT">Il vestibolo</span></em></span></button>
+  <a href="#vest" class="brand">LVCATELLI</a>
+  <button class="bag" onclick="openReg(true)" aria-label="Voir l'écrin">Écrin <span data-count>0</span></button>
+</header>
+
+<nav class="plan" id="plan" aria-label="Plan du palais"><button class="x" onclick="openPlan(false)">Fermer ✕</button><div class="in"><span class="cz">Pianta · piano nobile</span><h3>Plan du palais</h3><svg viewBox="0 0 440 370"><path d="M160 360V380M280 360V380" stroke="#241B16"/><g data-go="sal"><rect x="150" y="10" width="140" height="90"/><text class="n" x="220.0" y="57.0">V</text><text class="t" x="220.0" y="75.0">SALONE</text></g><g data-go="acan"><rect x="20" y="110" width="110" height="120"/><text class="n" x="75.0" y="172.0">III</text><text class="t" x="75.0" y="190.0">ACANTO</text></g><g data-go="gal"><rect x="150" y="110" width="140" height="170"/><text class="n" x="220.0" y="197.0">II</text><text class="t" x="220.0" y="215.0">GALLERIA</text></g><g data-go="form"><rect x="310" y="110" width="110" height="120"/><text class="n" x="365.0" y="172.0">IV</text><text class="t" x="365.0" y="190.0">FORMULA</text></g><g data-go="vest"><rect x="180" y="300" width="80" height="60"/><text class="n" x="220.0" y="332.0">I</text><text class="t" x="220.0" y="350.0">VESTIBOLO</text></g></svg></div></nav>
+
+<main>
+<!-- I · VESTIBOLO -->
+<section class="vest" id="vest" data-n="I" data-t="Il vestibolo" data-tone="dk">
+  <div class="st">
+    <div class="room" id="room">
+      <div class="beam"></div><div class="floor"></div>
+      <div class="grp" id="grp"><div class="apse"></div><div class="ped"></div>
+      <div class="bot"><img src="../img/sole-cut.webp" alt="Flacon Sole Dolce sur un piédestal de travertin" fetchpriority="high"></div></div>
+    </div>
+    <div class="vtxt" id="vtxt">
+      <div class="l"><span class="cz">Sala I · Il vestibolo</span><h1>Sole<br>Dolce</h1></div>
+      <div class="r"><p>Extrait de parfum en verre rubis, coiffé d'or. La première pièce exposée au Palazzo Lucatelli.</p><a href="#sal" class="btn g">Acquérir · 185 €</a></div>
+    </div>
+    <div class="wall" id="wall"><svg id="wallSvg" aria-hidden="true"></svg></div>
+    <div class="hint" id="hint">Franchir la porte<i></i></div>
+  </div>
+</section>
+
+<!-- II · GALLERIA -->
+<section class="gal" id="gal" data-n="II" data-t="La galleria">
+  <div class="st" id="galSt">
+    <div class="hdr"><div class="wrap sala-h" style="margin-bottom:0"><span class="num">II</span><h2><small>La galleria</small>Cinq pièces, une Maison</h2><span class="cz" style="color:var(--ink2)">Faites défiler ↓</span></div></div>
+    <div class="marble-floor"></div>
+    <div class="track" id="track"></div>
+    <div class="prog"><i id="galProg"></i></div>
+  </div>
+</section>
+
+<!-- III · ACANTO -->
+<section class="acan" id="acan" data-n="III" data-t="Sala dell'acanto">
+  <svg class="sinopia" id="sinopia" aria-hidden="true"></svg>
+  <div class="wrap">
+    <div class="sala-h rv"><span class="num">III</span><h2><small>Sala dell'acanto</small>La feuille des chapiteaux</h2><span class="cz" style="color:var(--ink2)">Acanto · bientôt</span><div class="rule"></div></div>
+    <div class="ag">
+      <div class="niche rv"><div class="arch"><div><img src="../img/acanto.webp" alt="Flacon Acanto, verre rubis sculpté d'une feuille d'acanthe" loading="lazy"></div></div><div class="cart"><span class="cz">N° II · Acanto</span>Verre rubis sculpté, bouchon d'or. En préparation à l'atelier.</div></div>
+      <div class="rv">
+        <p class="drop">Sur les chapiteaux corinthiens, la feuille d'acanthe couronne les colonnes depuis l'Antiquité. Les palais de la Renaissance l'ont gravée dans la pierre, sur les frises, les consoles et les portes.</p>
+        <p>Lucatelli la fait monter le long du verre, du pied jusqu'à l'épaule. Le dessin préparatoire, la sinopia, est encore visible au mur de cette salle.</p>
+        <form class="notify" onsubmit="event.preventDefault();this.querySelector('button').textContent='Inscrit';this.reset()"><input type="email" required placeholder="Votre e-mail pour l'ouverture" aria-label="E-mail"><button>Être prévenu</button></form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IV · FORMULA -->
+<section class="form" id="form" data-n="IV" data-t="Sala della formula">
+  <div class="wrap">
+    <div class="sala-h rv"><span class="num">IV</span><h2><small>Sala della formula</small>Trois ordres, un parfum</h2><span class="cz" style="color:var(--ink2)">Pyramide olfactive</span><div class="rule"></div></div>
+    <div class="slab rv">
+      <svg class="veins" aria-hidden="true"><filter id="mv"><feTurbulence type="fractalNoise" baseFrequency=".0035 .011" numOctaves="5" seed="7"/><feColorMatrix values="0 0 0 0 .42  0 0 0 0 .36  0 0 0 0 .3  0 0 0 -2.6 1.7"/></filter><rect width="100%" height="100%" filter="url(#mv)"/></svg>
+      <div class="ins">SOLE · DOLCE</div>
+      <p class="sub">Comme un palais s'élève d'un ordre à l'autre, le parfum se construit en trois étages.</p>
+      <div class="orders">
+        <div class="order">
+          <svg viewBox="0 0 60 150" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M8 6H52V14H8Z M12 14H48L44 22H16Z"/><path d="M17 22V136 M43 22V136 M23 22V136 M30 22V136 M37 22V136" opacity=".55"/><path d="M17 22V136M43 22V136"/><path d="M12 136H48V144H12Z M6 144H54V149H6Z"/></svg>
+          <span class="cz">Dorique · la tête</span><h3>L'éclat</h3><div class="mat">Bergamote<br>Citron de Sicile</div><p>L'ouverture, vive et lumineuse.</p>
+        </div>
+        <div class="order">
+          <svg viewBox="0 0 60 150" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M6 6H54V10H6Z"/><path d="M10 10Q6 10 6 15Q6 20 11 20Q14 20 14 16Q14 13 11 13 M50 10Q54 10 54 15Q54 20 49 20Q46 20 46 16Q46 13 49 13 M10 10H50 M14 18H46"/><path d="M17 22V136M43 22V136"/><path d="M23 22V136M30 22V136M37 22V136" opacity=".55"/><path d="M14 136H46 M12 140H48 M8 144H52V149H8Z"/></svg>
+          <span class="cz">Ionique · le cœur</span><h3>La lumière</h3><div class="mat">Fleur d'oranger<br>Rose · Lavande</div><p>Le cœur floral, ample et solaire.</p>
+        </div>
+        <div class="order">
+          <svg viewBox="0 0 60 150" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 4H56V9H4Z"/><path d="M14 30Q8 24 10 14Q16 16 18 24 M46 30Q52 24 50 14Q44 16 42 24 M22 30Q18 20 22 10Q28 18 26 30 M38 30Q42 20 38 10Q32 18 34 30 M30 30Q26 20 30 12Q34 20 30 30 M14 30H46 M10 9Q14 20 16 30 M50 9Q46 20 44 30"/><path d="M17 32V136M43 32V136"/><path d="M23 32V136M30 32V136M37 32V136" opacity=".55"/><path d="M14 136H46 M10 140H50 M6 144H54V149H6Z"/></svg>
+          <span class="cz">Corinthien · le fond</span><h3>La trace</h3><div class="mat">Fève tonka<br>Ambre · Musc blanc</div><p>Le sillage, chaud et enveloppant.</p>
+        </div>
+      </div>
+      <div class="inci"><span class="cz">Ingrédients</span>Alcohol denat., Parfum (Fragrance), Aqua (Water), Limonene, Linalool, Coumarin, Citronellol. · 50 ml · 1,7 fl.oz.</div>
+    </div>
+  </div>
+</section>
+
+<!-- V · SALONE -->
+<section class="sal" id="sal" data-n="V" data-t="Il salone" data-tone="dk">
+  <div class="wrap">
+    <div class="sala-h rv"><span class="num">V</span><h2><small>Il salone dell'écrin</small>Emporter la pièce</h2><span class="cz" style="color:rgba(233,225,211,.6)">Acquisition</span><div class="rule"></div></div>
+    <div class="sg">
+      <div class="niche rv"><div class="arch"><div><img src="../img/ecrin-marbre.webp" alt="L'écrin Sole Dolce, bordeaux au monogramme doré, sur marbre noir" loading="lazy"></div></div></div>
+      <div class="acq rv">
+        <span class="cz">Acquisition · N° I</span>
+        <h3>Sole Dolce</h3>
+        <div class="k">Extrait de parfum · 50 ml · écrin bordeaux</div>
+        <div class="row"><span class="cz" style="color:rgba(233,225,211,.7)">Gravure</span><input type="text" id="eng" maxlength="10" placeholder="Initiales" aria-label="Initiales à graver sur la bague"></div>
+        <div class="row"><span class="cz" style="color:rgba(233,225,211,.7)">Quantité</span><div class="qty"><button type="button" onclick="q(-1)" aria-label="Moins">−</button><span id="qv">1</span><button type="button" onclick="q(1)" aria-label="Plus">+</button></div></div>
+        <div class="row"><span class="cz" style="color:rgba(233,225,211,.7)">Total</span><span class="price" id="pv">185 €</span></div>
+        <button class="btn g" id="buy">Ajouter à l'écrin</button>
+        <small>Échantillon offert · livraison offerte dès 150 € · paiement en 3x</small>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="cort">
+  <div class="wrap">
+    <div class="top">
+      <div><div class="brand">LVCATELLI</div><p style="margin-top:16px;max-width:320px">Maison de parfum. Des extraits pensés comme des pièces de collection, entre lumière méditerranéenne et savoir-faire italien.</p></div>
+      <div><h5>Le palais</h5><ul><li><a href="#vest">Vestibule</a></li><li><a href="#gal">Galerie</a></li><li><a href="#acan">Salle de l'acanthe</a></li><li><a href="#form">La formule</a></li></ul></div>
+      <div><h5>Services</h5><ul><li>Gravure du bouchon</li><li>Écrin cadeau</li><li>Livraison &amp; retours</li><li>Contact</li></ul></div>
+      <div><h5>Registre des invités</h5><p style="font-size:15px">Avant-premières et éditions limitées.</p><form class="notify" style="margin-top:14px" onsubmit="event.preventDefault();this.querySelector('button').textContent='Merci';this.reset()"><input type="email" required placeholder="Votre e-mail" aria-label="E-mail"><button>Signer</button></form></div>
+    </div>
+    <div class="bot"><span>© 2026 Lucatelli · Tous droits réservés</span><span>Développé par Monsieur.H</span></div>
+  </div>
+</footer>
+
+<div class="reg" id="reg" onclick="if(event.target===this)openReg(false)">
+  <div class="card">
+    <div class="seal"><svg viewBox="50 40 240 580"><path d="M72 58V535H205M166 122V605M137 64H260V540"/></svg></div>
+    <h4 id="regT">Votre écrin</h4>
+    <p id="regP">Aucune pièce pour le moment.</p>
+    <div class="acts"><button class="btn r" onclick="openReg(false)">Continuer la visite</button><button class="btn" onclick="this.textContent='Paiement sécurisé · Shopify'">Commander</button></div>
+  </div>
+</div>
+
+<script src="../kit.js"></script>
+<script src="../drawings.js"></script>
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const NS='http://www.w3.org/2000/svg',mob=()=>innerWidth<700;
+
+/* ---- I · le mur et la porte en arc, recalculés à la taille de l'écran ---- */
+let A={};
+function buildWall(){
+  const W=innerWidth,H=innerHeight,aw=mob()?W*.74:Math.min(W*.36,H*.5,500),ah=Math.min(H*.74,aw*1.72),cx=W/2,by=H*.94,r=aw/2,sy=by-ah+r;
+  A={cx,cy:by-ah*.5};
+  const arch=(o)=>`M${cx-r-o} ${by} V${sy} A${r+o} ${r+o} 0 0 1 ${cx+r+o} ${sy} V${by}`;
+  const pw=Math.max(34,aw*.16),px=r+aw*.32;
+  const pil=(x)=>`<rect x="${x-pw/2}" y="${sy-r-90}" width="${pw}" height="${by-sy+r+90}" fill="#E4DBCB" stroke="rgba(70,52,34,.35)"/>`+[.25,.5,.75].map(f=>`<line x1="${x-pw/2+pw*f}" x2="${x-pw/2+pw*f}" y1="${sy-r-50}" y2="${by-30}" stroke="rgba(70,52,34,.22)"/>`).join('')+`<rect x="${x-pw/2-8}" y="${sy-r-104}" width="${pw+16}" height="16" fill="#DCD1BE" stroke="rgba(70,52,34,.35)"/><rect x="${x-pw/2-10}" y="${by-28}" width="${pw+20}" height="28" fill="#DCD1BE" stroke="rgba(70,52,34,.35)"/>`;
+  const fy=Math.min(sy-r-86,Math.max(80,sy-r-150)),ks=r*.2;
+  $('#wallSvg').setAttribute('viewBox',`0 0 ${W} ${H}`);
+  $('#wallSvg').innerHTML=`<defs><pattern id="ash" width="180" height="96" patternUnits="userSpaceOnUse"><rect width="180" height="96" fill="#E9E1D3"/><path d="M0 47.5H180M0 95.5H180M.5 0V48M90.5 48V96" stroke="rgba(70,52,34,.16)"/><rect x="2" y="2" width="176" height="44" fill="rgba(255,255,255,.12)"/></pattern><linearGradient id="sh" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".25"/><stop offset=".6" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#3a2a18" stop-opacity=".18"/></linearGradient></defs>
+  <path fill-rule="evenodd" fill="url(#ash)" d="M0 0H${W}V${H}H0Z ${arch(0)}Z"/>
+  <path fill-rule="evenodd" fill="url(#sh)" d="M0 0H${W}V${H}H0Z ${arch(0)}Z"/>
+  ${mob()?'':pil(cx-px)+pil(cx+px)}
+  <rect x="${mob()?0:cx-px-pw/2-10}" y="${fy}" width="${mob()?W:2*px+pw+20}" height="46" fill="#E2D8C6" stroke="rgba(70,52,34,.35)"/>
+  <text x="${cx}" y="${fy+30}" text-anchor="middle" style="font-family:Cinzel,serif;font-size:${mob()?13:17}px;letter-spacing:${mob()?5:9}px;fill:#5b4a3a">DOMVS · LVCATELLI · MMXXVI</text>
+  <path d="${arch(16)}" fill="none" stroke="rgba(70,52,34,.4)" stroke-width="1"/><path d="${arch(30)}" fill="none" stroke="rgba(70,52,34,.25)" stroke-width="1"/>
+  <path d="${arch(.5)}" fill="none" stroke="rgba(30,15,5,.45)" stroke-width="2"/>
+  <path d="M${cx-ks*.7} ${sy-r-32} H${cx+ks*.7} L${cx+ks*.45} ${sy-r+8} H${cx-ks*.45}Z" fill="#DCD1BE" stroke="rgba(70,52,34,.4)"/>
+  <rect x="0" y="${by}" width="${W}" height="${H-by}" fill="#D3C6AF"/>`;
+}
+buildWall();addEventListener('resize',buildWall);
+
+/* ---- défilement : traverser la porte, galerie horizontale, salle courante ---- */
+const wall=$('#wall'),room=$('#room'),vtxt=$('#vtxt'),hint=$('#hint'),track=$('#track'),secs=$$('main>section');
+function tick(){
+  const v=$('#vest').getBoundingClientRect(),k=Math.min(1,Math.max(0,-v.top/(v.height-innerHeight)));
+  const e=Math.pow(k,2.1),s=1+e*11;
+  wall.style.transformOrigin=`${A.cx}px ${A.cy}px`;wall.style.transform=`scale(${s})`;wall.style.opacity=k>.82?Math.max(0,1-(k-.82)/.14):1;
+  const up=mob()?Math.min(1,Math.max(0,(k-.62)/.3)):0;room.style.transform=`scale(${.92+k*.12})`;$('#grp').style.transform=`scale(${1-up*.45})`;
+  vtxt.style.opacity=Math.max(0,(k-.72)/.2);hint.style.opacity=k>.04?0:1;
+  const g=$('#gal'),gr=g.getBoundingClientRect();
+  if(innerWidth>900){const gk=Math.min(1,Math.max(0,-gr.top/(gr.height-innerHeight)));const max=track.scrollWidth-innerWidth;track.style.transform=`translateX(${-gk*max}px)`;$('#galProg').style.transform=`scaleX(${gk})`}
+  let cur=secs[0];secs.forEach(s=>{if(s.getBoundingClientRect().top<innerHeight*.5)cur=s});
+  const dk=cur.dataset.tone==='dk'&&!(cur.id==='vest'&&k<.8);
+  $('#hd').classList.toggle('dk',dk);$('#hd').classList.toggle('solid',cur.id!=='vest');
+  $('#roomN').textContent=cur.dataset.n;$('#roomT').textContent=cur.dataset.t;
+  $$('.plan g').forEach(r=>r.querySelector('rect').classList.toggle('on',r.dataset.go===cur.id));
+}
+addEventListener('scroll',tick,{passive:true});addEventListener('resize',tick);
+function openPlan(on){$('#plan').classList.toggle('on',on)}
+$$('.plan g').forEach(r=>r.addEventListener('click',()=>{openPlan(false);document.getElementById(r.dataset.go).scrollIntoView({behavior:'smooth'})}));
+
+/* ---- II · la galerie : niches et colonnes ---- */
+const COL=`<svg viewBox="0 0 64 620" preserveAspectRatio="none" fill="#E2D8C6" stroke="rgba(70,52,34,.35)"><path d="M2 0H62V14H2Z"/><path d="M8 14Q0 14 0 24Q0 34 10 34Q16 34 16 27Q16 21 10 21 M56 14Q64 14 64 24Q64 34 54 34Q48 34 48 27Q48 21 54 21 M8 14H56 M16 32H48" fill="none"/><path d="M14 36H50V590H14Z"/><path d="M22 40V586M32 40V586M42 40V586" fill="none" stroke="rgba(70,52,34,.2)"/><path d="M10 590H54V602H10Z M4 602H60V620H4Z"/></svg>`;
+const PIECES=[['../img/sole-dolce.webp','N° I · Sole Dolce','Extrait de parfum. Verre rubis, bouchon d\'or biseauté.'],['../img/duo.webp','N° I &amp; II · Le duo','Sole Dolce et Acanto, les deux premiers flacons de la Maison.'],['../img/acanto.webp','N° II · Acanto','La feuille d\'acanthe sculptée dans le verre. Bientôt.'],['../img/ecrin.webp','L\'écrin','Carton rigide bordeaux, monogramme doré à chaud.'],['../img/ecrin-marbre.webp','L\'écrin, assemblé','Prêt à offrir, sur marbre noir.']];
+track.innerHTML=PIECES.map((p,i)=>`${i?`<div class="col">${COL}</div>`:''}<figure class="niche"><div class="arch"><div><img src="${p[0].replace('.webp','-800.webp')}" alt="${p[1].replace(/&amp;/,'et')}" loading="lazy"></div></div><figcaption class="cart"><span class="cz">${p[1]}</span>${p[2]}</figcaption></figure>`).join('');
+
+/* ---- III · sinopia : le dessin préparatoire de l'acanthe au mur ---- */
+(function(){const d=DRAW.acanto,s=$('#sinopia');s.setAttribute('viewBox',`0 0 ${d.w} ${d.h}`);s.style.aspectRatio=d.w/d.h;s.innerHTML=`<path d="${d.outer}"/><path d="${d.inner}"/>`})();
+
+/* ---- V · acquisition ---- */
+let qn=1;function q(d){qn=Math.max(1,Math.min(9,qn+d));$('#qv').textContent=qn;$('#pv').textContent=LK.eur(qn*185)}
+function openReg(on){const n=LK.count();$('#regT').textContent=n?'Inscrit au registre':'Votre écrin';$('#regP').textContent=n?`${n} pièce${n>1?'s':''} · ${LK.eur(LK.total())} · échantillon offert`:'Aucune pièce pour le moment. Sole Dolce vous attend au salon.';$('#reg').classList.toggle('on',on)}
+$('#buy').onclick=()=>{const r=LK.add({q:qn,engrave:$('#eng').value});$('#regT').textContent='Inscrit au registre';$('#regP').textContent=`Sole Dolce × ${r.q}${r.eng?` · gravure « ${r.eng} »`:''} · total ${LK.eur(r.total)}`;$('#reg').classList.add('on')};
+addEventListener('keydown',e=>{if(e.key==='Escape'){openReg(false);openPlan(false)}});
+
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+$$('.rv').forEach(el=>io.observe(el));tick();
+</script>
+</body>
+</html>
