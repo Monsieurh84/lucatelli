@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sole Dolce — Extrait de parfum 50 ml | Lucatelli</title>
+<meta name="description" content="Sole Dolce, extrait de parfum Lucatelli 50 ml. Agrumes de Sicile, cœur floral lumineux, fond ambré. Flacon rubis, bouchon d'or. Échantillon et emballage cadeau offerts.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#2A0508">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="common.css">
+<style>
+body{background:var(--avorio)}
+header.site{top:36px}
+.crumbs{padding:150px 0 0;font-size:10.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--pietra);display:flex;gap:12px;flex-wrap:wrap}
+.crumbs a:hover{color:var(--rubino)}
+.pdp{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:80px;padding-top:30px;padding-bottom:120px;align-items:start}
+.gal{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.gal figure{position:relative;overflow:hidden;background:#ddd6de;aspect-ratio:4/5;cursor:zoom-in}
+.gal figure:first-child{grid-column:1/-1;aspect-ratio:1/1.08}
+.gal figure:nth-child(even):last-child{grid-column:1/-1;aspect-ratio:16/10}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
+.gal figure:hover img{transform:scale(1.04)}
+.gal .badge{position:absolute;top:20px;left:20px;font-size:9.5px;letter-spacing:.3em;text-transform:uppercase;background:var(--nero);color:var(--oro-l);padding:8px 12px;z-index:2}
+.gcount{display:none}
+.info{position:sticky;top:110px}
+.info .caps{color:var(--rubino)}
+.info h1{font-family:var(--serif);font-weight:400;font-size:clamp(56px,5.6vw,92px);line-height:.92;margin:14px 0 8px}
+.info .tag{font-family:var(--serif);font-size:24px;color:var(--oro-d)}
+.pr{display:flex;align-items:baseline;gap:16px;margin:28px 0 4px}
+.pr b{font-family:var(--serif);font-weight:400;font-size:42px;line-height:1}
+.pr span{font-size:12px;color:var(--pietra);letter-spacing:.06em}
+.desc{color:#4d3a3d;font-weight:300;font-size:15.5px;margin:22px 0 0;max-width:520px}
+.opt{margin-top:30px;border-top:1px solid var(--line-d);padding-top:22px}
+.opt .lb{display:flex;justify-content:space-between;font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;margin-bottom:12px}
+.sz{display:flex;gap:8px}
+.sz button{height:52px;padding:0 22px;border:1px solid var(--ink);font-size:12.5px;letter-spacing:.08em;background:var(--ink);color:var(--avorio)}
+.sz button.dis{background:transparent;color:var(--pietra);border-color:var(--line-d);cursor:not-allowed}
+.eng{margin-top:18px}
+.eng summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:12px;font-size:13px}
+.eng summary::before{content:"+";width:24px;height:24px;border:1px solid var(--ink);display:grid;place-items:center;font-size:14px}
+.eng[open] summary::before{content:"−"}
+.eng .f{margin-top:14px;display:grid;gap:8px}
+.eng input{border:1px solid var(--line-d);background:#fff;height:50px;padding:0 16px;font:inherit;font-size:14px;letter-spacing:.2em;text-transform:uppercase;outline:none}
+.eng input:focus{border-color:var(--rubino)}
+.eng small{color:var(--pietra);font-size:11.5px}
+.buy{display:grid;grid-template-columns:auto 1fr;gap:10px;margin-top:26px}
+.buy .q{display:flex;align-items:center;border:1px solid var(--ink);height:58px}
+.buy .q button{width:46px;height:100%;font-size:18px}
+.buy .q span{width:30px;text-align:center}
+.buy .btn{width:100%}
+.notify{display:none;margin-top:26px}
+.notify form{display:flex;gap:10px}
+.notify input{flex:1;border:1px solid var(--ink);background:transparent;height:58px;padding:0 16px;font:inherit;min-width:0}
+.soon .buy,.soon .opt,.soon .pr{display:none}
+.soon .notify{display:block}
+.assur{display:grid;grid-template-columns:1fr 1fr;margin-top:28px;border:1px solid var(--line-d)}
+.assur div{padding:18px;font-size:12.5px;color:#5a4649}
+.assur div:nth-child(odd){border-right:1px solid var(--line-d)}
+.assur div:nth-child(-n+2){border-bottom:1px solid var(--line-d)}
+.assur b{display:block;font-family:var(--serif);font-weight:400;font-size:20px;color:var(--ink);margin-bottom:2px}
+.acc{margin-top:28px;border-top:1px solid var(--line-d)}
+.acc details{border-bottom:1px solid var(--line-d)}
+.acc summary{list-style:none;cursor:pointer;padding:20px 0;display:flex;justify-content:space-between;font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;font-weight:500}
+.acc summary::after{content:"+";font-size:16px;line-height:1}
+.acc details[open] summary::after{content:"−"}
+.acc .c{padding:0 0 22px;color:#4d3a3d;font-size:14px;font-weight:300}
+.pyr{display:grid;gap:12px}
+.pyr div{display:grid;grid-template-columns:80px 1fr;gap:12px}
+.pyr b{font-weight:500;font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--rubino);padding-top:2px}
+/* bandeau éditorial */
+.edit{background:var(--bordeaux);color:var(--avorio);display:grid;grid-template-columns:1fr 1fr;min-height:80vh}
+.edit .im{overflow:hidden}
+.edit img{width:100%;height:100%;object-fit:cover}
+.edit .tx{padding:100px 80px;display:flex;flex-direction:column;justify-content:center}
+.edit .caps{color:var(--oro)}
+.edit h2{font-family:var(--serif);font-weight:400;font-size:clamp(48px,5vw,80px);line-height:.95;margin:16px 0 22px}
+.edit p{color:#cdb6b6;font-weight:300;max-width:420px}
+.also{padding:130px 0;background:var(--avorio)}
+.also h2{font-family:var(--serif);font-weight:400;font-size:clamp(44px,5vw,76px);text-align:center;margin-bottom:56px}
+.ag{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:1000px;margin:0 auto}
+.ag a{position:relative;display:block;overflow:hidden;background:#ddd6de}
+.ag img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform 1.4s var(--ease)}
+.ag a:hover img{transform:scale(1.05)}
+.ag .l{position:absolute;left:0;right:0;bottom:0;padding:24px;color:var(--avorio);background:linear-gradient(transparent,rgba(18,2,3,.75))}
+.ag .l b{display:block;font-family:var(--serif);font-weight:400;font-size:34px;line-height:1}
+.ag .l small{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--oro-l)}
+.sticky-buy{position:fixed;left:0;right:0;bottom:0;z-index:55;background:rgba(245,239,232,.97);backdrop-filter:blur(10px);border-top:1px solid var(--line-d);padding:10px 16px calc(10px + env(safe-area-inset-bottom));display:none;align-items:center;gap:14px;transform:translateY(110%);visibility:hidden;transition:transform .5s var(--ease),visibility 0s .5s}
+.sticky-buy.on{transform:none;visibility:visible;transition:transform .5s var(--ease)}
+.sticky-buy .t{flex:1;min-width:0}
+.sticky-buy .t b{display:block;font-family:var(--serif);font-weight:400;font-size:22px;line-height:1}
+.sticky-buy .t span{font-size:12px;color:var(--pietra)}
+.sticky-buy .btn{height:50px;padding:0 22px}
+.zoom{position:fixed;inset:0;z-index:150;background:#e7e1e8;display:grid;place-items:center;opacity:0;visibility:hidden;transition:opacity .5s,visibility 0s .5s;cursor:zoom-out}
+.zoom.on{opacity:1;visibility:visible;transition:opacity .5s}
+.zoom img{max-width:100%;max-height:100vh;object-fit:contain}
+@media(max-width:960px){
+ .crumbs{padding-top:118px}
+ .pdp{grid-template-columns:1fr;gap:34px;padding-top:18px;padding-bottom:80px}
+ .buy .btn{padding:0 18px;letter-spacing:.2em}
+ .assur b{font-size:17px}
+ .galw{position:relative;margin:0 -20px}
+ .gal{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:0;scrollbar-width:none}
+ .gal::-webkit-scrollbar{display:none}
+ .gal figure,.gal figure:first-child,.gal figure:nth-child(even):last-child{flex:0 0 100%;aspect-ratio:4/5;scroll-snap-align:start}
+ .gcount{display:block;position:absolute;right:16px;bottom:16px;background:rgba(245,239,232,.92);font-size:10px;letter-spacing:.2em;padding:6px 10px}
+ .info{position:static}
+ .edit{grid-template-columns:1fr}.edit .im{height:60vh}.edit .tx{padding:70px 20px}
+ .also{padding:90px 0}.ag{grid-template-columns:1fr 1fr;gap:10px}.ag .l b{font-size:24px}.ag .l{padding:14px}
+ .sticky-buy{display:flex}
+ .notify form{flex-direction:column}
+ .notify .btn{width:100%}
+ footer{padding-bottom:80px}
+}
+</style>
+</head>
+<body>
+<div class="topline">Livraison offerte dès 150 €<span class="tl2">&nbsp;· Échantillon offert à chaque commande</span></div>
+<header class="site light" id="hdr"></header>
+
+<main id="main">
+  <div class="wrap"><nav class="crumbs" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a><span>/</span><a href="index.html#collection">Collection</a><span>/</span><span style="color:var(--ink)" id="crumbName"></span></nav></div>
+  <section class="wrap pdp" id="pdp">
+    <div class="galw"><div class="gal" id="gal"></div><span class="gcount" id="gcount"></span></div>
+    <div class="info" id="info">
+      <span class="caps" id="kind"></span>
+      <h1 id="pname"></h1>
+      <div class="tag" id="ptag"></div>
+      <div class="pr"><b id="pprice"></b><span>TTC · ou 3 × <span id="p3"></span> sans frais</span></div>
+      <p class="desc" id="pdesc"></p>
+      <div class="opt">
+        <div class="lb"><span>Contenance</span><span id="psize"></span></div>
+        <div class="sz"><button aria-pressed="true">50 ml</button><button class="dis" title="Bientôt disponible">100 ml · bientôt</button></div>
+        <details class="eng"><summary>Gravure du flacon · offerte</summary><div class="f"><input id="engr" maxlength="12" placeholder="Vos initiales"><small>Jusqu'à 12 caractères, gravés à la main sur le bouchon. Délai +48 h.</small></div></details>
+      </div>
+      <div class="buy"><div class="q"><button aria-label="Moins" id="qm">−</button><span id="qv">1</span><button aria-label="Plus" id="qp">+</button></div><button class="btn dark" id="addBtn">Ajouter à l'écrin <span class="arr">→</span></button></div>
+      <div class="notify"><p class="desc" style="margin:0 0 16px">Ce flacon arrive bientôt. Laissez votre adresse pour être parmi les premiers à le découvrir.</p><form onsubmit="event.preventDefault();toast('Vous serez prévenu en avant-première');this.reset()"><input type="email" required placeholder="Votre e-mail" aria-label="E-mail"><button class="btn dark">Être prévenu</button></form></div>
+      <div class="assur"><div><b>Échantillon offert</b>Glissé dans chaque commande.</div><div><b>Écrin cadeau</b>Carte manuscrite incluse.</div><div><b>Livraison soignée</b>Offerte dès 150 €.</div><div><b>Conseil privé</b>Un expert vous répond.</div></div>
+      <div class="acc" id="acc"></div>
+    </div>
+  </section>
+
+  <section class="edit">
+    <div class="im"><img src="img/ecrin-marbre.webp" alt="Écrin Lucatelli Sole Dolce sur marbre" loading="lazy"></div>
+    <div class="tx"><span class="caps rv">L'écrin</span><h2 class="rv rv-d1">Un cadeau,<br>déjà prêt</h2><p class="rv rv-d2">Coffret bordeaux au monogramme répété, marquage or à chaud. Ajoutez une carte écrite à la main au moment de commander : nous nous occupons du reste.</p></div>
+  </section>
+
+  <section class="also"><div class="wrap"><h2 class="rv">La collection</h2><div class="ag" id="also"></div></div></section>
+</main>
+<div class="sticky-buy" id="sb"></div>
+<div class="zoom" id="zoom" onclick="this.classList.remove('on')"><img alt=""></div>
+<footer id="ftr"></footer>
+
+<script src="common.js"></script>
+<script>
+shell();
+const slug=new URLSearchParams(location.search).get('p')||'sole-dolce';
+const p=PRODUCTS[slug]||PRODUCTS['sole-dolce'];
+const soon=p.status!=='ok';
+if(soon)$('#info').classList.add('soon');
+document.title=`${p.name} — ${p.kind}${p.price?' · '+eur(p.price):''} | Lucatelli`;
+$('meta[name=description]').setAttribute('content',`${p.name}, ${p.kind.toLowerCase()} Lucatelli. ${p.tagline} ${soon?'Bientôt disponible.':'Échantillon et emballage cadeau offerts.'}`);
+$('#crumbName').textContent=p.name;$('#kind').textContent=p.kind+(soon?' · Prochainement':'');$('#pname').textContent=p.name;$('#ptag').textContent='« '+p.tagline+' »';
+if(p.price){$('#pprice').textContent=eur(p.price);$('#p3').textContent=(p.price/3).toFixed(2).replace('.',',')+' €'}
+$('#pdesc').textContent=p.desc;$('#psize').textContent=p.size;
+$('#gal').innerHTML=p.gallery.map((g,i)=>`<figure>${i?'':`<span class="badge">${soon?'Prochainement':'Extrait de parfum'}</span>`}<img src="${g}" alt="${p.name} — vue ${i+1}" ${i?'loading="lazy"':'fetchpriority="high"'}></figure>`).join('');
+const gal=$('#gal');const gc=()=>$('#gcount').textContent=(Math.round(gal.scrollLeft/gal.clientWidth)+1)+' / '+p.gallery.length;gal.addEventListener('scroll',gc,{passive:true});gc();
+$$('#gal img').forEach(im=>im.onclick=()=>{$('#zoom img').src=im.src;$('#zoom').classList.add('on')});
+// accordéons
+const A=[];
+if(p.notes)A.push(['Notes olfactives',`<div class="pyr">${Object.entries(p.notes).map(([k,v])=>`<div><b>${k}</b><span>${v.join(', ')}</span></div>`).join('')}</div>`,true]);
+A.push(['Le flacon','Verre rubis teinté dans la masse, monogramme doré, bouchon en métal doré poli miroir taillé en biseau. Livré dans son écrin bordeaux marqué à l\'or.',!p.notes]);
+if(p.inci)A.push(['Ingrédients',p.inci+'<br><br>Contenance 50 ml · 1,7 fl.oz. · À utiliser dans les 36 mois après ouverture. Produit inflammable : tenir éloigné de la chaleur.']);
+A.push(['Conseils d\'application','Vaporisez à 15 cm sur les points chauds : poignets, cou, derrière l\'oreille. Ne frottez pas : laissez l\'extrait se révéler au contact de la peau.']);
+A.push(['Livraison & retours','Expédition soignée sous 48 h, suivie et assurée. Livraison offerte dès 150 €. Retours acceptés sous 14 jours pour tout flacon non ouvert.']);
+$('#acc').innerHTML=A.map(([t,c,o])=>`<details ${o?'open':''}><summary>${t}</summary><div class="c">${c}</div></details>`).join('');
+// quantité + ajout
+let q=1;$('#qm').onclick=()=>{q=Math.max(1,q-1);$('#qv').textContent=q};$('#qp').onclick=()=>{q=Math.min(9,q+1);$('#qv').textContent=q};
+const add=()=>{if(soon)return;addToCart(p.slug,q,{engrave:$('#engr').value.trim().toUpperCase()})};
+$('#addBtn').onclick=add;
+// barre mobile
+const sb=$('#sb');sb.innerHTML=soon?`<div class="t"><b>${p.name}</b><span>Prochainement</span></div><a class="btn dark" href="#info">Être prévenu</a>`:`<div class="t"><b>${p.name}</b><span>${p.size} · ${eur(p.price)}</span></div><button class="btn dark">Ajouter</button>`;
+const sbb=sb.querySelector('button');if(sbb)sbb.onclick=add;
+new IntersectionObserver(([e])=>sb.classList.toggle('on',!e.isIntersecting&&e.boundingClientRect.top<0)).observe(soon?$('.notify'):$('#addBtn'));
+// collection
+$('#also').innerHTML=Object.values(PRODUCTS).map(x=>`<a href="product.html?p=${x.slug}" class="rv"><img src="${x.img.replace('.webp','-800.webp')}" alt="${x.name}" loading="lazy"><div class="l"><small>${x.status==='ok'?x.kind:'Prochainement'}</small><b>${x.name}</b></div></a>`).join('');
+$$('#also .rv').forEach(el=>new IntersectionObserver(([e],o)=>{if(e.isIntersecting){el.classList.add('in');o.disconnect()}}).observe(el));
+// données structurées
+const ld={"@context":"https://schema.org","@type":"Product",name:p.name,description:p.desc,image:p.gallery.map(g=>new URL(g,location.href).href),brand:{"@type":"Brand",name:"Lucatelli"},category:"Parfum > Extrait de parfum"};
+if(p.price)ld.offers={"@type":"Offer",priceCurrency:"EUR",price:p.price,availability:"https://schema.org/InStock",itemCondition:"https://schema.org/NewCondition",url:location.href};
+const s=document.createElement('script');s.type='application/ld+json';s.textContent=JSON.stringify(ld);document.head.appendChild(s);
+</script>
+</body>
+</html>
