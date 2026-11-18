@@ -54,14 +54,14 @@ let _t; function toast(m) { const t = $('#toast'); t.textContent = m; t.classLis
 const MONO = '<svg class="mono" viewBox="50 40 240 580" aria-hidden="true"><path d="M72 58V535H205M166 122V605M137 64H260V540"/></svg>';
 function shell() {
   $('#hdr').innerHTML = `<div class="wrap hd">
-    <nav aria-label="Navigation principale"><a href="index.html#journee">La journée</a><a href="index.html#ecrin">L'écrin</a><a href="index.html#maison">La Maison</a></nav>
+    <nav aria-label="Navigation principale"><a href="index.html#p1">Le flacon</a><a href="index.html#p3">L'acanthe</a><a href="index.html#p5">L'écrin</a></nav>
     <button class="ib burger" aria-label="Menu" onclick="openNav()"><svg viewBox="0 0 24 24"><path d="M3 8h18M3 16h12"/></svg></button>
     <a href="index.html" class="brand" aria-label="Lucatelli — accueil">${MONO}<span class="word">LUCΛTELLI</span></a>
     <div class="ic"><button class="ib" aria-label="Rechercher"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4-4"/></svg></button><button class="ib" aria-label="Panier" onclick="openCart()"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1 13H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="cnt js-count" hidden>0</span></button></div></div>`;
   document.body.insertAdjacentHTML('beforeend', `
   <div class="veil" id="veil" onclick="closeAll()"></div>
   <nav class="mnav" id="mnav" aria-label="Menu mobile"><button class="ib x" onclick="closeAll()" aria-label="Fermer" style="color:var(--oro-l)">✕</button>
-    <a href="index.html#journee" onclick="closeAll()">La journée</a><a href="index.html#ecrin" onclick="closeAll()">L'écrin</a><a href="index.html#maison" onclick="closeAll()">La Maison</a><a href="product.html?p=sole-dolce" onclick="closeAll()">Sole Dolce</a><a href="product.html?p=acanto" onclick="closeAll()">Acanto</a>
+    <a href="index.html#p1" onclick="closeAll()">Le flacon</a><a href="index.html#p2" onclick="closeAll()">Le bouchon</a><a href="index.html#p3" onclick="closeAll()">L'acanthe</a><a href="index.html#p4" onclick="closeAll()">La formule</a><a href="index.html#p5" onclick="closeAll()">L'écrin</a><a href="product.html?p=sole-dolce" onclick="closeAll()">Sole Dolce</a><a href="product.html?p=acanto" onclick="closeAll()">Acanto</a>
     <div class="mf">Lucatelli · Extrait de parfum</div></nav>
   <aside class="drawer" id="drawer" aria-label="Panier">
     <div class="dh"><span class="serif">Votre écrin</span><button class="ib" onclick="closeAll()" aria-label="Fermer">✕</button></div>
@@ -75,7 +75,7 @@ function shell() {
   $('#ftr').innerHTML = `<div class="pattern"></div><div class="wrap">
    <div class="ft">
     <div class="fbrand"><span class="word">LUCΛTELLI</span><p>Maison de parfum. Des extraits rares, pensés comme des objets d'art, entre lumière méditerranéenne et savoir-faire italien.</p></div>
-    <div><h5>Collection</h5><ul><li><a href="product.html?p=sole-dolce">Sole Dolce</a></li><li><a href="product.html?p=acanto">Acanto · bientôt</a></li><li><a href="index.html#ecrin">L'écrin</a></li><li><a href="#">Coffret découverte</a></li></ul></div>
+    <div><h5>Collection</h5><ul><li><a href="product.html?p=sole-dolce">Sole Dolce</a></li><li><a href="product.html?p=acanto">Acanto · bientôt</a></li><li><a href="index.html#p5">L'écrin</a></li><li><a href="#">Coffret découverte</a></li></ul></div>
     <div><h5>Service</h5><ul><li><a href="#">Livraison &amp; retours</a></li><li><a href="#">Conseil olfactif</a></li><li><a href="#">Gravure du flacon</a></li><li><a href="#">Contact</a></li></ul></div>
     <div class="fnl"><h5>Le Cercle Lucatelli</h5><p style="font-size:13.5px">Avant-premières, éditions limitées et invitations privées.</p><form onsubmit="event.preventDefault();toast('Bienvenue dans le Cercle');this.reset()"><input type="email" required placeholder="Votre adresse e-mail" aria-label="Adresse e-mail"><button>S'inscrire</button></form></div>
    </div>
