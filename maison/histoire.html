@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Notre histoire — Lucatelli, maison de parfum</title>
+<meta name="description" content="L'histoire de la Maison Lucatelli : des parfums pensés comme des objets à garder, un verre rubis, un bouchon d'or et un écrin dessinés avec exigence.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#FAF7F2">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="maison.css">
+<style>
+.ph{position:relative;height:72vh;min-height:460px;overflow:hidden;display:flex;align-items:flex-end}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ph::after{content:"";position:absolute;inset:0;background:linear-gradient(rgba(27,20,22,.05),rgba(27,20,22,.75))}
+.ph .t{position:relative;z-index:1;padding-bottom:70px;color:rgba(250,247,242,.85)}
+.ph h1{color:var(--ivo);font-size:clamp(46px,6vw,92px);margin:12px 0 10px}
+.ph .eb{color:var(--or2)}
+.man{text-align:center}
+.man p.big{font-family:var(--ti);font-size:clamp(24px,2.6vw,36px);line-height:1.4;color:var(--noir)}
+.man .sig{margin-top:30px;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--or)}
+.chap{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:center}
+.chap+.chap{margin-top:120px}
+.chap.rev .im{order:2}
+.chap .im{aspect-ratio:4/5;overflow:hidden;background:#e9e4ec}
+.chap .im img{width:100%;height:100%;object-fit:cover}
+.chap .n{font-family:var(--ti);font-size:15px;color:var(--or);letter-spacing:.2em}
+.chap h2{font-size:clamp(32px,3.4vw,50px);margin:12px 0 18px}
+.chap p+p{margin-top:14px}
+@media(max-width:700px){.ph img{object-position:18% 50%}.ph::after{background:linear-gradient(rgba(27,20,22,.2),rgba(27,20,22,.85))}}
+@media(max-width:900px){.chap{grid-template-columns:1fr;gap:30px}.chap.rev .im{order:0}.chap+.chap{margin-top:80px}.chap .im{aspect-ratio:4/3}}
+.vals{background:var(--bord2);color:rgba(250,247,242,.78)}
+.vals h2{color:var(--ivo)}
+.vals .eb{color:var(--or2)}
+.vg{display:grid;grid-template-columns:repeat(3,1fr);margin-top:60px;border-top:1px solid rgba(250,247,242,.15)}
+.vg div{padding:40px 36px 0 0}
+.vg div+div{padding-left:36px;border-left:1px solid rgba(250,247,242,.15)}
+.vg b{display:block;font-family:var(--ti);font-weight:400;font-size:26px;color:var(--ivo);margin:10px 0 10px}
+.vg span{font-family:var(--ti);color:var(--or2);font-size:15px}
+@media(max-width:900px){.vg{grid-template-columns:1fr}.vg div,.vg div+div{padding:30px 0;border-left:0;border-bottom:1px solid rgba(250,247,242,.15)}}
+.end{text-align:center}
+.end h2{font-size:clamp(34px,3.6vw,52px);margin:12px 0 26px}
+</style>
+</head>
+<body>
+<main>
+  <section class="ph">
+    <img src="../img/ecrin-marbre.webp" alt="L'écrin Lucatelli sur un marbre noir" fetchpriority="high">
+    <div class="wrap t"><span class="eb">Notre histoire</span><h1>La Maison Lucatelli</h1><p style="max-width:520px">Des parfums rares, pensés comme des objets que l'on garde.</p></div>
+  </section>
+  <div class="wrap crumb"><a href="index.html">Accueil</a><i>/</i><span>Notre histoire</span></div>
+
+  <section class="sec man" style="padding-top:60px">
+    <div class="narrow rv">
+      <span class="eb">Notre manifeste</span>
+      <p class="big" style="margin-top:22px">« Un parfum se regarde avant de se sentir. Il se pose sur une coiffeuse, se transmet, se reconnaît de loin. Nous voulions des flacons qui méritent cette place. »</p>
+      <p class="sig">La Maison Lucatelli</p>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:0">
+    <div class="wrap">
+      <div class="chap rv">
+        <div class="im"><img src="../img/duo.webp" alt="Les flacons Sole Dolce et Acanto" loading="lazy"></div>
+        <div><span class="n">I</span><h2>Une maison, un nom</h2><p>Lucatelli est née d'un désir simple : créer des parfums qui ont la tenue d'un bel objet. Pas une collection pléthorique, mais quelques extraits travaillés avec patience, chacun dans un flacon qui lui ressemble.</p><p>Le nom évoque l'Italie, ses palais, sa lumière dorée de fin d'après-midi. C'est cet horizon qui guide chacune de nos créations.</p></div>
+      </div>
+      <div class="chap rev rv">
+        <div class="im"><img src="../img/sole-dolce.webp" alt="Le flacon Sole Dolce en verre rubis" loading="lazy"></div>
+        <div><span class="n">II</span><h2>Le verre rubis</h2><p>Nos flacons sont taillés dans un verre rouge profond, teinté dans la masse. Sous la lumière, il s'éclaire comme un vitrail ; dans l'ombre, il prend la profondeur d'une pierre précieuse.</p><p>Au sommet, un bouchon en métal doré, tranché en biseau, cerclé d'une bague gravée au nom de la Maison.</p></div>
+      </div>
+      <div class="chap rv">
+        <div class="im"><img src="../img/acanto.webp" alt="Le flacon Acanto, sculpté d'une feuille d'acanthe" loading="lazy"></div>
+        <div><span class="n">III</span><h2>L'Italie pour horizon</h2><p>La feuille d'acanthe couronne les colonnes corinthiennes depuis l'Antiquité. Nous l'avons fait monter le long du verre de notre second flacon, Acanto, sculptée en relief du pied jusqu'à l'épaule.</p><p>Architecture, lumière, art de vivre : l'Italie reste notre source d'inspiration, du dessin du flacon jusqu'au choix des matières.</p></div>
+      </div>
+      <div class="chap rev rv" id="ecrin">
+        <div class="im"><img src="../img/ecrin.webp" alt="L'écrin bordeaux Lucatelli, face et dos" loading="lazy"></div>
+        <div><span class="n">IV</span><h2>L'écrin</h2><p>Un carton rigide bordeaux, un monogramme doré à chaud, un motif répété en relief. L'écrin n'est pas un emballage : c'est la première chose que l'on découvre, et souvent celle que l'on garde.</p><p>Chaque commande peut être accompagnée d'une carte écrite à la main.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec vals">
+    <div class="wrap">
+      <div class="rv"><span class="eb">Nos engagements</span><h2 style="font-size:clamp(34px,3.6vw,52px);margin-top:10px">Ce qui nous guide</h2></div>
+      <div class="vg rv">
+        <div><span>01</span><b>L'exigence</b><p>Des extraits de parfum, concentrés et tenaces, et des flacons pensés dans leurs moindres détails.</p></div>
+        <div><span>02</span><b>La rareté</b><p>Peu de créations, mais chacune aboutie. Nous préférons un parfum juste à une collection entière.</p></div>
+        <div><span>03</span><b>L'attention</b><p>Gravure, écrin, carte manuscrite, échantillon : chaque commande est préparée comme un cadeau.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec end">
+    <div class="narrow rv"><span class="eb">Le premier chapitre</span><h2>Découvrez Sole Dolce</h2><a href="produit.html?p=sole-dolce" class="btn">Voir le parfum</a></div>
+  </section>
+</main>
+<script src="../kit.js"></script>
+<script src="maison.js"></script>
+<script>shell('histoire.html')</script>
+</body>
+</html>
