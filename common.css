@@ -3,7 +3,7 @@
   --oro:#C9A55A; --oro-l:#EBD29A; --oro-d:#8C6B2E;
   --avorio:#F5EFE8; --carta:#EFE7DE; --lilla:#DDD5DD; --pietra:#8E8086;
   --ink:#1E0B0D; --line:rgba(201,165,90,.28); --line-d:rgba(30,11,13,.12);
-  --serif:"Italiana","Didot",serif; --sans:"Montserrat",system-ui,sans-serif;
+  --serif:"Gloock","Didot",serif; --sans:"Montserrat",system-ui,sans-serif;
   --ease:cubic-bezier(.2,.8,.2,1); --ease-io:cubic-bezier(.7,0,.2,1);
 }
 *{box-sizing:border-box;margin:0;padding:0}

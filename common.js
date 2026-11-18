@@ -1,6 +1,7 @@
 /* LUCATELLI — socle commun : catalogue, panier, en-tête, animations */
 const PRODUCTS = {
   'sole-dolce': {
+    cut: 'img/sole-cut.webp',
     slug: 'sole-dolce', name: 'Sole Dolce', kind: 'Extrait de parfum', size: '50 ml · 1,7 fl.oz.', price: 185, status: 'ok',
     img: 'img/sole-dolce.webp', gallery: ['img/sole-dolce.webp', 'img/duo.webp', 'img/ecrin.webp', 'img/ecrin-marbre.webp'],
     tagline: 'Il sole, in una goccia.',
@@ -53,14 +54,14 @@ let _t; function toast(m) { const t = $('#toast'); t.textContent = m; t.classLis
 const MONO = '<svg class="mono" viewBox="50 40 240 580" aria-hidden="true"><path d="M72 58V535H205M166 122V605M137 64H260V540"/></svg>';
 function shell() {
   $('#hdr').innerHTML = `<div class="wrap hd">
-    <nav aria-label="Navigation principale"><a href="index.html#parfum">Le parfum</a><a href="index.html#flacon">Le flacon</a><a href="index.html#maison">La Maison</a></nav>
+    <nav aria-label="Navigation principale"><a href="index.html#journee">La journée</a><a href="index.html#ecrin">L'écrin</a><a href="index.html#maison">La Maison</a></nav>
     <button class="ib burger" aria-label="Menu" onclick="openNav()"><svg viewBox="0 0 24 24"><path d="M3 8h18M3 16h12"/></svg></button>
     <a href="index.html" class="brand" aria-label="Lucatelli — accueil">${MONO}<span class="word">LUCΛTELLI</span></a>
     <div class="ic"><button class="ib" aria-label="Rechercher"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4-4"/></svg></button><button class="ib" aria-label="Panier" onclick="openCart()"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1 13H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="cnt js-count" hidden>0</span></button></div></div>`;
   document.body.insertAdjacentHTML('beforeend', `
   <div class="veil" id="veil" onclick="closeAll()"></div>
   <nav class="mnav" id="mnav" aria-label="Menu mobile"><button class="ib x" onclick="closeAll()" aria-label="Fermer" style="color:var(--oro-l)">✕</button>
-    <a href="index.html#parfum" onclick="closeAll()">Sole Dolce</a><a href="index.html#flacon" onclick="closeAll()">Le flacon</a><a href="index.html#notes" onclick="closeAll()">Les notes</a><a href="index.html#ecrin" onclick="closeAll()">L'écrin</a><a href="index.html#maison" onclick="closeAll()">La Maison</a><a href="product.html?p=sole-dolce" onclick="closeAll()">Commander</a>
+    <a href="index.html#journee" onclick="closeAll()">La journée</a><a href="index.html#ecrin" onclick="closeAll()">L'écrin</a><a href="index.html#maison" onclick="closeAll()">La Maison</a><a href="product.html?p=sole-dolce" onclick="closeAll()">Sole Dolce</a><a href="product.html?p=acanto" onclick="closeAll()">Acanto</a>
     <div class="mf">Lucatelli · Extrait de parfum</div></nav>
   <aside class="drawer" id="drawer" aria-label="Panier">
     <div class="dh"><span class="serif">Votre écrin</span><button class="ib" onclick="closeAll()" aria-label="Fermer">✕</button></div>
